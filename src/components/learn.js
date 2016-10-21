@@ -46,17 +46,27 @@ As a User
 
 *API*
 
-GET https://youtube-search-example-salmxnykzc.now.sh/
+GET http://utube.how2js.com/
 
 query params
 
 * q - search criteria - string
 * code - 'codeisfun'
+* maxResults - 10
 
 *HINT*
 
 Use *xhr* as your ajax module
-    `)
+
+You can also pass more options on your query string
+
+https://developers.google.com/youtube/v3/docs/search/list?hl=en
+
+
+    `),
+    h('a', {
+      href: '#/'
+    }, 'Index')
   ])
 
 module.exports = Learn
