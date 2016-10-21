@@ -11,7 +11,8 @@ const {
   Cats,
   Moviedb,
   Spotify,
-  Youtube
+  Youtube,
+  YoutubeDetail
 } = require('./components')
 
 module.exports = _ =>
@@ -37,6 +38,10 @@ module.exports = _ =>
     h(Route, {
       path: '/youtube',
       component: Youtube
+    }),
+    h(Route, {
+      path: '/youtube/:id',
+      component: YoutubeDetail
     }),
     h(Route, {
       path: '/learn',
