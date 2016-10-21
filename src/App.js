@@ -21,7 +21,7 @@ module.exports = _ =>
   }, [
     h(Route, {
       path: '/',
-      component: Landing
+      component: Youtube
     }),
     h(Route, {
       path: '/cats',
